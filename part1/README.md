@@ -6,7 +6,7 @@
 - QtDesigner 학습
 - Naver API 뉴스 검색 윔폼 만들기
 
-![네이버뉴스앱(https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131.png)]
+![네이버뉴스앱](https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131.png)
 
 ### DB연동 GUI 프로그램 학습
 
