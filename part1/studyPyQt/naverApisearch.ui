@@ -52,7 +52,7 @@
       <property name="title">
        <string>뉴스검색</string>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>31</x>
@@ -70,7 +70,13 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="txtSearch"/>
+         <widget class="QLineEdit" name="txtSearch">
+          <property name="font">
+           <font>
+            <family>나눔고딕</family>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnSearch">
@@ -96,7 +102,13 @@
    </property>
    <layout class="QVBoxLayout" name="resultLayout">
     <item>
-     <widget class="QListView" name="lsvResult"/>
+     <widget class="QTableWidget" name="tblresult">
+      <property name="font">
+       <font>
+        <family>나눔고딕</family>
+       </font>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
