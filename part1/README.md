@@ -7,6 +7,7 @@
 - Naver API 뉴스 검색 윔폼 만들기
 
 ![네이버뉴스앱](https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131.png)
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131_01.png"width"780/>
 
 ### DB연동 GUI 프로그램 학습
 
