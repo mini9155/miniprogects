@@ -6,12 +6,19 @@
 - QtDesigner 학습
 - Naver API 뉴스 검색 윔폼 만들기
   - Python 3.11.2
-  - PyQt5
-  - Qt Designer
   - Naver OpenAPI
+  - PyQt5 / Qt Designer
 
 ![네이버뉴스앱](https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131.png)
 <img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131_01.png" width=780/>
+
+- Naver API 영화검색 앱 만들기
+  - Python 3.11.2
+  - PyQt5 / Qt Designer
+  - Naver OpenAPI
+  - urllib.request.urlopen 이미지 다운로드 습득 *
+
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/img1.png" width=780/>
 
 ### DB연동 GUI 프로그램 학습
 
