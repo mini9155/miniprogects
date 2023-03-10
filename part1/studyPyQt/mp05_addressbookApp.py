@@ -24,6 +24,8 @@ class qtApp(QMainWindow):
         self.tblAddress.doubleClicked.connect(self.tblAddressDoublelicked)
         self.btnDel.clicked.connect(self.btnDelClicked)
 
+
+
     
     def btnNewClicked(self): # 신규버튼을 누르면
         # 라인 에디트 내용 삭제 후 이름에 포커스
@@ -90,6 +92,30 @@ class qtApp(QMainWindow):
             # 입력창 내용 없어져
             self.btnNewClicked()
 
+    def btnDelClicked(self):
+        if self.curIdx == 0:
+            QMessageBox.warning(self, '알림', '삭제할 데이터를 선택하시오')
+            return
+        else:
+            reply = QMessageBox.question(self,'알림','정말로 삭제하시겠습니까?',QMessageBox.Yes | QMessageBox.No,QMessageBox.Yes)
+            if reply == QMessageBox.No:
+                return
+            
+            self.conn = pymysql.connect(host='localhost'
+                                        , user='root'
+                                        ,password='12345'
+                                        , db = 'miniproject'
+                                        , charset= 'utf8')
+            query = 'DELETE FROM addressbook WHERE Idx = %s'
+            cur = self.conn.cursor()
+            cur.execute(query, (self.curIdx))
+
+            self.conn.commit()
+            self.conn.close()
+            QMessageBox.about(self, '알림', '삭제했습니다')
+            
+            self.initDB()
+            self.btnNewClicked()
 
     def initDB(self):
         self.conn = pymysql.connect(host='localhost'

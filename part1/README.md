@@ -21,5 +21,10 @@
 <img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/img1.png" width=780/>
 
 ### DB연동 GUI 프로그램 학습
-
+- 주소록 프로그램 만들기
+  - Python 3.11.2
+  - MySQL 8.0 연동
+  - pymsql 모듈 사용
+  - PyQt5 / Qt Designer
+  
 ### 미니프로젝트 실습
