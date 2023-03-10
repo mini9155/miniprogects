@@ -26,5 +26,12 @@
   - MySQL 8.0 연동
   - pymsql 모듈 사용
   - PyQt5 / Qt Designer
-  
+  # 변경
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/1.PNG" width=780/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/2.PNG" width=780/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/3.PNG" width=780/>
+  # 삭제
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/4.PNG" width=780/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/5.PNG" width=780/>
+
 ### 미니프로젝트 실습
