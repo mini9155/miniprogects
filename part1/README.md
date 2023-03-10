@@ -11,7 +11,7 @@
 
 ![네이버뉴스앱](https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131.png)
 <img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/KakaoTalk_20230308_111503131_01.png" width=780/>
-
+Cancel changes
 - Naver API 영화검색 앱 만들기
   - Python 3.11.2
   - PyQt5 / Qt Designer
@@ -27,11 +27,11 @@
   - pymsql 모듈 사용
   - PyQt5 / Qt Designer
   # 변경
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/1.PNG" width=400,height=300>
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/2.PNG" width=400,height=300>
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/3.PNG" width=400,height=300>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/1.PNG" width=400/,height=300/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/2.PNG" width=400/,height=300/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/3.PNG" width=400/,height=300/>
   # 삭제
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/4.PNG" width=400,height=300/>
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/5.PNG" width=400,height=300/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/4.PNG" width=400/,height=300/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/5.PNG" width=400/,height=300/>
 
 ### 미니프로젝트 실습
