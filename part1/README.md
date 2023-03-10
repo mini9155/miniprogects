@@ -27,11 +27,11 @@ Cancel changes
   - pymsql 모듈 사용
   - PyQt5 / Qt Designer
   # 변경
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/1.PNG" width=400/,height=300/>
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/2.PNG" width=400/,height=300/>
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/3.PNG" width=400/,height=300/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/1.PNG" width=400/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/2.PNG" width=400/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/3.PNG" width=400/>
   # 삭제
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/4.PNG" width=400/,height=300/>
-<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/5.PNG" width=400/,height=300/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/4.PNG" width=400/>
+<img src ="https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/images/5.PNG" width=400/>
 
 ### 미니프로젝트 실습
