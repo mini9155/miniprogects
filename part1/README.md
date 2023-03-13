@@ -38,6 +38,7 @@
 ## 파이썬 관련 추가학습
 - QR코드 생성 앱
   - qrcode 모듈
+  
 ![QR코드앱](https://github.com/mini9155/miniprogects/blob/main/part1/studyPython/qrqr.PNG)
   
 - 컴퓨터 정보출력 앱
@@ -45,5 +46,6 @@
   - socket 모듈
   - requests 모듈
   - PyQt
+
 ![컴퓨터정보앱](https://github.com/mini9155/miniprogects/blob/main/part1/studyPython/cpu.PNG)
 ### 미니프로젝트 실습
