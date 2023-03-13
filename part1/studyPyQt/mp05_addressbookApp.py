@@ -1,5 +1,4 @@
 # 주소록 GUI 프로그램 - MySQL 연동
-
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
