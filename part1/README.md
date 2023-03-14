@@ -48,4 +48,12 @@
   - PyQt
 
 ![컴퓨터정보앱](https://github.com/mini9155/miniprogects/blob/main/part1/studyPython/cpu.PNG)
+
+- TTS(Text To speach)
+  - gtts
+  - playsound
+
+- 암호해제 프로그램
+  - intertools, zipfile 기본 모듈
+  
 ### 미니프로젝트 실습
