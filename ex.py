@@ -1,26 +1,20 @@
 from collections import deque
 
 def solution(babbling):
-    o = ["aya", "ye", "woo", "ma"] # 1 2 3 4
-    A = deque(babbling)
-    A_pop = A.popleft()
-    result = 0
-    
-    for a in range(0,4):
-        for b in range(0,4):
-            if A_pop == o[a]:
-                result += 1
-                A_pop = A.popleft()
-                a, b = 0, 0
-                break
-            elif o[a] != o[b]:
-                words = o[a] + o[b]
-                if words == A_pop:
-                    result += 1
-                    A_pop = A.popleft()
-                    a, b = 0, 0
+    b = ["aya", "ye", "woo", "ma"] # 3,2,3,2 = 2,3,4,5,8,10
+    #
+    a = deque(babbling)
+
+    for i in babbling:
+        if b[0] in i:
+            pass
+        elif b[1] in i:
+            pass
+        elif b[2] in i:
+            pass
+        elif b
 
 
 
-babbling = ["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]
+babbling = ["ayaye", "uuuma", "ye", "yemawoo", "ayaa"] # 5,5,2,7,3
 print(solution(babbling))

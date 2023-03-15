@@ -12,20 +12,20 @@ class qtApp(QMainWindow):
 
     def __init__(self):
         super().__init__()
-        uic.loadUi('./part1/studyPyQt/addressBook.ui',self)
-        self.setWindowIcon(QIcon('./part1/studyPyQt/addressbook.png'))
+        uic.loadUi('./part1/studyPyQt/addressBook.ui',self) # ui 불러오기
+        self.setWindowIcon(QIcon('./part1/studyPyQt/addressbook.png')) # 사진 넣기
         self.setWindowTitle('주소록') # 이름 설정
 
         self.initDB() # DB 초기화
 
-        self.btnNew.clicked.connect(self.btnNewClicked)
-        self.btnSave.clicked.connect(self.btnSaveClicked)
-        self.tblAddress.doubleClicked.connect(self.tblAddressDoublelicked)
-        self.btnDel.clicked.connect(self.btnDelClicked)
+        self.btnNew.clicked.connect(self.btnNewClicked) # 신규 버튼 연결
+        self.btnSave.clicked.connect(self.btnSaveClicked) # 저장 버튼 연결
+        self.tblAddress.doubleClicked.connect(self.tblAddressDoublelicked) # 더블클릭 안되게
+        self.btnDel.clicked.connect(self.btnDelClicked) # 삭제 버튼 연결
 
 
 
-    
+    # 삭제 버튼 누르면 전부 비우기
     def btnNewClicked(self): # 신규버튼을 누르면
         # 라인 에디트 내용 삭제 후 이름에 포커스
         self.txtName.setText('')
@@ -139,7 +139,7 @@ class qtApp(QMainWindow):
     def makeTable(self,rows):
         self.tblAddress.setColumnCount(5) # 컬럼 갯수
         self.tblAddress.setRowCount(len(rows)) # 0. 행 갯수
-        self.tblAddress.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.tblAddress.setSelectionMode(QAbstractItemView.SingleSelection) # 단일선택
         self.tblAddress.setHorizontalHeaderLabels(['번호','이름','전화번호','이메일','주소'])
 
         for i,row in enumerate(rows):
