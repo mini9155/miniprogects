@@ -67,5 +67,11 @@
   - pygame
 
   ![게임화면](https://github.com/mini9155/miniprogects/blob/main/part1/studyPyGame/end.png)
+
 - 전국대학교 위치맵
+  - pandas
+  - folium
+  - io
+  - PyQt
+  ![대학위치](https://github.com/mini9155/miniprogects/blob/main/part1/studyPython/map.PNG)
 ### 미니프로젝트 실습
