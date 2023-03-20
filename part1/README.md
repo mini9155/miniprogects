@@ -66,6 +66,6 @@
 - 게임 만들기 - DinoRun
   - pygame
 
-  ![게임화면]()
+  ![게임화면](https://github.com/mini9155/miniprogects/blob/main/part1/studyPyGame/end.png)
 
 ### 미니프로젝트 실습
