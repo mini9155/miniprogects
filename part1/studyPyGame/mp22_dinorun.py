@@ -7,7 +7,9 @@ pygame.init()
 
 ASSETS = 'C:/source/miniprogects/part1/studyPyGame/Assets/'
 SCREEN_WIDTH = 1100
-SCREEN = pygame.display.set_mode((SCREEN_WIDTH,600))
+SCREEN_HEIGHT = 600
+
+SCREEN = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
 Icon = pygame.image.load('C:/source/miniprogects/part1/studyPyGame/dino.png')
 pygame.display.set_icon(Icon)
 
@@ -17,6 +19,10 @@ RUNNING = [pygame.image.load(f'{ASSETS}Dino/DinoRun1.png'),
 DUCKING = [pygame.image.load(f'{ASSETS}Dino/DinoDuck1.png'),
            pygame.image.load(f'{ASSETS}Dino/DinoDuck2.png')]
 JUMPING = pygame.image.load(f'{ASSETS}Dino/DinoJump.png')
+START = pygame.image.load(f'{ASSETS}Dino/DinoStart.png') # 첫 시작 이미지
+DEAD = pygame.image.load(f'{ASSETS}Dino/DinoDead.png') # 죽음 이미지
+    
+
 CLOUD = pygame.image.load(f'{ASSETS}Other/Cloud.png') 
 BIRD =[ pygame.image.load(f'{ASSETS}Bird/Bird1.png'),
        pygame.image.load(f'{ASSETS}Bird/Bird2.png')]
@@ -152,7 +158,8 @@ class LargeCactus(Obstacle):
 
 
 def main():
-    global game_speed, x_pos_bg, y_pos_bg, points, obstacles
+
+    global game_speed, x_pos_bg, y_pos_bg, points, obstacles, font
     x_pos_bg = 0
     y_pos_bg = 380
     run = True
@@ -162,6 +169,7 @@ def main():
     cloud =Cloud()
     game_speed = 14
     obstacles = []
+    death_count = 0
 
     font = pygame.font.Font(f'{ASSETS}NanumGothicBold.ttf', 20)
 
@@ -218,11 +226,43 @@ def main():
             # collision Detection
             if dino.dino_rect.colliderect(obs.rect):
                 pygame.draw.rect(SCREEN, (255,0,0), dino.dino_rect, 3)
+                pygame.time.delay(1500) # 1.5초
+                death_count += 1 # 사망
+                menu(death_count) # 메인 메뉴화면으로 전환
 
 
 
         clock.tick(40) # 프레임 레이트
         pygame.display.update() # 초당 30번 화면을 갱신 해줌
+
+def menu(death_count):
+    global points, font
+    font = pygame.font.Font(f'{ASSETS}NanumGothicBold.ttf', 20)
+    run = True
+    while run:
+        SCREEN.fill((255,255,255)) # 스크린을 하얀색으로 채운다
+
+        if death_count == 0: # 최초
+            text = font.render('시작하려면 아무 키나 누르세요',True,(83,83,83))
+        elif death_count > 0:
+            text = font.render('재시작하려면 아무 키나 누르세요',True,(83,83,83))
+            score = font.render(f'SCORE : {points}',True,(83,83,83))
+            scoreRect = score.get_rect()
+            scoreRect.center = (SCREEN_WIDTH // 2,SCREEN_HEIGHT // 2 + 50)
+            SCREEN.blit(score, scoreRect)
+        textRect = text.get_rect()
+        textRect.center = (SCREEN_WIDTH // 2,SCREEN_HEIGHT // 2)
+        SCREEN.blit(text, textRect)
+        SCREEN.blit(DEAD,(SCREEN_WIDTH // 2 - 20,SCREEN_HEIGHT // 2 - 140))
+
+        pygame.display.update()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                pygame.quit() # 완전종료
+            if event.type == pygame.KEYDOWN:
+                main()
 
 if __name__ == '__main__':
     main()
