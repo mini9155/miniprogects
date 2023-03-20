@@ -77,5 +77,5 @@
   
 - 계산기앱
   - PyQt
-  
+  ![계산기](https://github.com/mini9155/miniprogects/blob/main/part1/studyPyQt/cal.PNG)  
   ### 미니프로젝트 실습
