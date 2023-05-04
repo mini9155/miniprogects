@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BongusTestApp", "BongusTest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test용", "Test용", "{8FD69410-B30B-47E2-93D7-A61895BBC46C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MQTT Subsc", "MQTT Subsc", "{64717AA8-0C30-4B94-8FD4-EB035ABF427D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MQTT Publish", "MQTT Publish", "{62CDC838-29DB-4A52-98EA-A9BF50F9DCE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeLotDeviceApp", "FakeLotDeviceApp\FakeLotDeviceApp.csproj", "{46E91E20-7A7C-4536-BAB2-7F4C231B6CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHomeMonitoringApp", "SmartHomeMonitoringApp\SmartHomeMonitoringApp.csproj", "{31E9EC28-0FCB-4DEA-9369-F0FC8E53E943}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +25,22 @@ Global
 		{92BAF0C7-DCBF-4923-BBCB-9B8C2A728A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92BAF0C7-DCBF-4923-BBCB-9B8C2A728A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92BAF0C7-DCBF-4923-BBCB-9B8C2A728A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E91E20-7A7C-4536-BAB2-7F4C231B6CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E91E20-7A7C-4536-BAB2-7F4C231B6CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E91E20-7A7C-4536-BAB2-7F4C231B6CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E91E20-7A7C-4536-BAB2-7F4C231B6CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E9EC28-0FCB-4DEA-9369-F0FC8E53E943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E9EC28-0FCB-4DEA-9369-F0FC8E53E943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E9EC28-0FCB-4DEA-9369-F0FC8E53E943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E9EC28-0FCB-4DEA-9369-F0FC8E53E943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{92BAF0C7-DCBF-4923-BBCB-9B8C2A728A1A} = {8FD69410-B30B-47E2-93D7-A61895BBC46C}
+		{46E91E20-7A7C-4536-BAB2-7F4C231B6CA5} = {62CDC838-29DB-4A52-98EA-A9BF50F9DCE2}
+		{31E9EC28-0FCB-4DEA-9369-F0FC8E53E943} = {64717AA8-0C30-4B94-8FD4-EB035ABF427D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6790623C-7C58-4099-B3D5-095CA1FE672F}
