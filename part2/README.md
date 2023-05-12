@@ -18,12 +18,15 @@
 	- 대용량 데이터 차는 OxyChart를 사용
 	
 온습도 더미데이터 시뮬레이터
+
 <img src="https://github.com/mini9155/miniprogects/blob/main/part2/studySCADA/ScadaSimulation/dummy.gif">
 
 스마트홈 모니터링앱
+
 <img src="https://github.com/mini9155/miniprogects/blob/main/part2/studySCADA/ScadaSimulation/monitor.gif">
 
 스마트홈 모니터링 시각화
+
 <img src="https://github.com/mini9155/miniprogects/blob/main/part2/studySCADA/ScadaSimulation/see.png">
 
 
