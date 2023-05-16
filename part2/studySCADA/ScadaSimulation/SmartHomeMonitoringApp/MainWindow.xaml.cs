@@ -19,6 +19,7 @@ using MahApps.Metro.Controls.Dialogs;
 using SmartHomeMonitoringApp.Logics;
 using System.Security.AccessControl;
 using System.ComponentModel;
+using ControlzEx.Theming;
 
 namespace SmartHomeMonitoringApp
 {
@@ -120,6 +121,12 @@ namespace SmartHomeMonitoringApp
             var about = new About();
             about.Owner = this;
             about.ShowDialog();
+        }
+
+        // 모든 테마와 액센트를 전부 처리할 체크이벤트
+        private void MnuThemeAccent_Checked(object sender, RoutedEventArgs e)
+        {
+            ThemeManager.Current.ChangeTheme(this, "Dark.Amber");
         }
     }
 }
