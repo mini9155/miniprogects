@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>FrmMain</class>
  <widget class="QWidget" name="FrmMain">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
   <property name="enabled">
    <bool>true</bool>
   </property>
@@ -31,8 +34,13 @@
     <height>400</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>나눔고딕</family>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>네이버API 뉴스검색앱</string>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -40,43 +48,34 @@
      <x>10</x>
      <y>10</y>
      <width>620</width>
-     <height>60</height>
+     <height>71</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="searchLayout">
     <item>
      <widget class="QGroupBox" name="groupBox">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
       <property name="title">
-       <string>뉴스검색</string>
+       <string>뉴스 검색</string>
       </property>
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>31</x>
-         <y>20</y>
+         <x>30</x>
+         <y>24</y>
          <width>571</width>
-         <height>25</height>
+         <height>31</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>검색어</string>
+           <string>검색어 : </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="txtSearch">
-          <property name="font">
-           <font>
-            <family>나눔고딕</family>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="txtSearch"/>
         </item>
         <item>
          <widget class="QPushButton" name="btnSearch">
@@ -95,14 +94,14 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>70</y>
+     <y>89</y>
      <width>620</width>
-     <height>320</height>
+     <height>301</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="resultLayout">
     <item>
-     <widget class="QTableWidget" name="tblresult">
+     <widget class="QTableWidget" name="tblResult">
       <property name="font">
        <font>
         <family>나눔고딕</family>

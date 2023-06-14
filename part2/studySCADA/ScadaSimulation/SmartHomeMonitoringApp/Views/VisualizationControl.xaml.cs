@@ -97,8 +97,7 @@ namespace SmartHomeMonitoringApp.Views
                 errorMsg += "검색 시작일이 검색 종료일보다 최신일수 없습니다.";
             }
 
-            if (isValid == false)
-            {
+            if (isValid == false) {
                 await Commons.ShowCustomMessageAsync("검색", errorMsg);
                 return;
             }
@@ -125,7 +124,7 @@ namespace SmartHomeMonitoringApp.Views
                     cmd.Parameters.AddWithValue("@StartDate", DtpStart.Text);
                     cmd.Parameters.AddWithValue("@EndDate", DtpEnd.Text);
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-
+                    
                     adapter.Fill(ds, "smarthomesensor");
                     // MessageBox.Show("TotalData", ds.Tables["smarthomesensor"].Rows.Count.ToString()); // 데이터 개수확인
                 }
@@ -164,13 +163,13 @@ namespace SmartHomeMonitoringApp.Views
             if (ds.Tables[0].Rows.Count > 0)
             {
                 TotalDataCount = ds.Tables[0].Rows.Count;
-
-                var count = 0;
+                
+                var count = 0; 
                 foreach (DataRow row in ds.Tables[0].Rows)
                 {
                     tempSeries.Points.Add(new DataPoint(count++, Convert.ToDouble(row["Temp"])));
                     humidSeries.Points.Add(new DataPoint(count++, Convert.ToDouble(row["Humid"])));
-                }
+                }                
             }
 
             tmp.Series.Add(tempSeries);

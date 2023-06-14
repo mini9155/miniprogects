@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>widget</class>
- <widget class="QWidget" name="widget">
+ <class>FrmMain</class>
+ <widget class="QWidget" name="FrmMain">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
   <property name="enabled">
    <bool>true</bool>
   </property>
@@ -31,11 +34,13 @@
     <height>500</height>
    </size>
   </property>
-  <property name="acceptDrops">
-   <bool>false</bool>
+  <property name="font">
+   <font>
+    <family>나눔고딕</family>
+   </font>
   </property>
   <property name="windowTitle">
-   <string>영화 검색</string>
+   <string>네이버API 영화검색앱</string>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -43,41 +48,36 @@
      <x>10</x>
      <y>10</y>
      <width>781</width>
-     <height>60</height>
+     <height>71</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="searchLayout">
     <item>
      <widget class="QGroupBox" name="groupBox">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
       <property name="title">
-       <string>영화검색</string>
+       <string>영화 검색</string>
       </property>
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>11</x>
-         <y>20</y>
-         <width>761</width>
-         <height>25</height>
+         <x>30</x>
+         <y>24</y>
+         <width>731</width>
+         <height>31</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>영화명</string>
+           <string>영화명 : </string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QLineEdit" name="txtSearch">
-          <property name="font">
-           <font>
-            <family>나눔고딕</family>
-           </font>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
           </property>
          </widget>
         </item>
@@ -98,14 +98,14 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>70</y>
+     <y>89</y>
      <width>781</width>
-     <height>421</height>
+     <height>401</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="resultLayout">
     <item>
-     <widget class="QTableWidget" name="tblresult">
+     <widget class="QTableWidget" name="tblResult">
       <property name="font">
        <font>
         <family>나눔고딕</family>

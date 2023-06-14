@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>240</height>
+    <height>270</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>400</width>
-    <height>240</height>
+    <height>270</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>400</width>
-    <height>240</height>
+    <height>270</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -28,191 +28,129 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>9</x>
+     <x>10</x>
      <y>10</y>
-     <width>380</width>
-     <height>100</height>
+     <width>381</width>
+     <height>111</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>나눔고딕</family>
-     <pointsize>10</pointsize>
-    </font>
    </property>
    <property name="title">
     <string>컴퓨터 정보</string>
    </property>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>60</width>
-      <height>20</height>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-weight:bold;</string>
-    </property>
-    <property name="text">
-     <string>CPU (속도)</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblcore">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>40</y>
-      <width>280</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-     </font>
+     <string notr="true">font-weight: bold;</string>
     </property>
     <property name="text">
      <string>코어</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lblcpu">
+   <widget class="QLabel" name="lblMemory">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>20</y>
-      <width>280</width>
-      <height>20</height>
+      <x>110</x>
+      <y>60</y>
+      <width>261</width>
+      <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-     </font>
+    <property name="text">
+     <string>메모리</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-weight: bold;</string>
     </property>
     <property name="text">
-     <string>CPU 속도</string>
+     <string>메모리</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCPU">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CPU(속도) </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDisk">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>디스크</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-weight: bold;</string>
+    </property>
+    <property name="text">
+     <string>CPU(속도) </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCore">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>코어</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
-      <width>60</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-weight:bold;</string>
-    </property>
-    <property name="text">
-     <string>코어</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblmemory">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>60</y>
-      <width>280</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>메모리</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
       <y>80</y>
-      <width>60</width>
-      <height>20</height>
+      <width>91</width>
+      <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">font-weight:bold;</string>
+     <string notr="true">font-weight: bold;</string>
     </property>
     <property name="text">
      <string>디스크</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbldisk">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>80</y>
-      <width>280</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>디스크</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>60</y>
-      <width>60</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-weight:bold;</string>
-    </property>
-    <property name="text">
-     <string>메모리</string>
     </property>
    </widget>
   </widget>
@@ -220,165 +158,109 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>120</y>
-     <width>380</width>
-     <height>81</height>
+     <y>130</y>
+     <width>381</width>
+     <height>91</height>
     </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>나눔고딕</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
    </property>
    <property name="title">
     <string>네트워크 정보</string>
    </property>
-   <widget class="QLabel" name="qqq">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>80</width>
-      <height>30</height>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-weight:bold;</string>
-    </property>
-    <property name="text">
-     <string>내부아이피</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblextranet">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>30</y>
-      <width>280</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
+     <string notr="true">font-weight: bold;</string>
     </property>
     <property name="text">
      <string>외부아이피</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lblinnernet">
+   <widget class="QLabel" name="lblNetStat">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>10</y>
-      <width>280</width>
-      <height>30</height>
+      <x>110</x>
+      <y>60</y>
+      <width>261</width>
+      <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
+    <property name="text">
+     <string>전송상태</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-weight: bold;</string>
+    </property>
+    <property name="text">
+     <string>전송상태</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblInnerNet">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
     </property>
     <property name="text">
      <string>내부아이피</string>
     </property>
    </widget>
-   <widget class="QLabel" name="qqqq">
+   <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>30</y>
-      <width>80</width>
-      <height>30</height>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">font-weight:bold;</string>
+     <string notr="true">font-weight: bold;</string>
+    </property>
+    <property name="text">
+     <string>내부아이피</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblExtraNet">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
     </property>
     <property name="text">
      <string>외부아이피</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lblnet">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>50</y>
-      <width>280</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>전송상태</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="qq">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>50</y>
-      <width>80</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>나눔고딕</family>
-      <pointsize>8</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-weight:bold;</string>
-    </property>
-    <property name="text">
-     <string>전송상태</string>
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="refresh">
+  <widget class="QPushButton" name="btnRefresh">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>210</y>
-     <width>101</width>
-     <height>20</height>
+     <x>310</x>
+     <y>230</y>
+     <width>81</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
